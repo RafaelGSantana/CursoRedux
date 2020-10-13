@@ -6,12 +6,12 @@ export interface IProduct {
 }
 
 // Cada item terá um produto e uma quantidade
-export interface iCartItem {
-  product: object;
+export interface ICartItem {
+  product: IProduct;
   quantity: number;
 }
 
 // As informações disponíveis no estado do carrinho terão o seguinte formato
 export interface ICartState {
-  items: iCartItem[];
+  items: ICartItem[];
 }
